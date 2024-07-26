@@ -1,14 +1,30 @@
 body {
-    background: url(Imagens/nature-product-backdrop-farm-sunlight.jpg);
+    background: url(https://img.freepik.com/fotos-gratis/fazendeiro-trabalhando-ao-ar-livre-colhendo-trigo-ao-por-do-sol-gerado-por-ia_188544-21578.jpg?t=st=1721988493~exp=1721992093~hmac=e7f9cd620bb50273980a128a9fa5071399267de669d3feb524a1ea79f63bfdda&w=1380);
     background-size: 100%;
     background-repeat: no-repeat;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#rect
- {
-    width: 1000px;
-    height: 800px;
-    background-color: rgba(255, 255, 255, 0.466);
-    margin: 100px auto;
-    border-radius: 50px;
-    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.685);
- }
+
+
+header {
+    background-image: linear-gradient(to top, rgb(43, 24, 0), rgb(77, 42, 0));
+    height: 100px;
+
+}
+.titulo-logo{
+    color: rgb(255, 187, 0);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 40px;
+    margin-left: 200px;
+}
+li {
+    list-style: none;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+ul {
+    margin-top: -50px;
+}
