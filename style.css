@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: "Rajdhani", sans-serif;
     font-size: 20px;
+    background-color: rgb(0, 0, 0);
 }
 header {
     display: flex;
@@ -40,4 +41,22 @@ a {
 nav li {
     display: inline;
     padding-right: 100px;
+}
+.mySlides {
+    width: 1360px;
+    margin: auto;
+    height: 780px;
+    margin-top: 50px;
+}
+.rect{
+    background-size: auto;
+    background-color: aqua;
+    height: 5px;
+    border-radius: 10px;
+}
+#area-logo .rect{
+    margin-left: 205px;
+}
+nav a:hover {
+    color: aqua;
 }
