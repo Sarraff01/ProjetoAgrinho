@@ -31,29 +31,25 @@
     </section>
 </header>
     <section class="menu">
-    <img class="mySlides" src="https://img.freepik.com/fotos-gratis/colheita-de-trigo-em-prado-tranquilo-ao-por-do-sol-gerado-por-ia_24640-80628.jpg?t=st=1723128077~exp=1723131677~hmac=ffc8b82e0cb925ba51d01becf863796247bb0093cd0b17cad649fa4d74bc4bb9&w=1380">
-    <img class="mySlides" src="https://img.freepik.com/fotos-gratis/cenario-urbano-cyberpunk_23-2150712472.jpg?t=st=1723128250~exp=1723131850~hmac=20e3c5a52806c766159a89a31ac0a83c82ed909408197bcfea55a31b0bdf633e&w=1380">
+        <div class="main-content">
+            <h1 class="main-heading">Background image slider with CSS</h1>
+          </div>
+          <ul class="slideshow">
+            <li>
+              <span class="img-bg-slide">Image 01</span>
+            </li>
+            <li>
+              <span class="img-bg-slide">Image 02</span>
+            </li>
+            <li>
+              <span class="img-bg-slide">Image 03</span>
+            </li>
 
-    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+          </ul>
+        </div>
     </section>
         
 
-    <script>
-var slideIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 3000); // Change image every 2 seconds
-}
-    </script>
 </body>
 </html>
