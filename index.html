@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 <header>
@@ -19,37 +20,100 @@
         <h1 class="logo">Agrinho <Span class="logo-dois">Paraná</Span></h1>
         <div class="rect">.</div>
     </section>
-    <section class="nav">
-        <nav>
-            <ul>
-                <li><a href="">Notícias </a> </li>
-                <li><a href="">Opinião </a> </li>
-                <li><a href="">Clima</a> </li>
-            </ul>
-        </nav>
-        <div class="rect">.</div>
-    </section>
+
 </header>
     <section class="menu">
-        <div class="main-content">
-            <h1 class="main-heading">Background image slider with CSS</h1>
-          </div>
-          <ul class="slideshow">
-            <li>
-              <span class="img-bg-slide">Image 01</span>
-            </li>
-            <li>
-              <span class="img-bg-slide">Image 02</span>
-            </li>
-            <li>
-              <span class="img-bg-slide">Image 03</span>
-            </li>
-
-          </ul>
+      <div class="slideshow-container">
+        <div class="slide fade">
+            <div class="text">PROJETO AGRINHO</div>
         </div>
+        <div class="slide fade">
+            <div class="text">DO CAMPO À CIDADE:</div>
+        </div>
+        <div class="slide fade">
+            <div class="text">COLHENDO OPORTUNIDADES!</div>
+        </div>
+    </div>
+
+    
     </section>
-        
+    <section class="about">
+
+      <div class="text-container">
+        <h2 class="titulo">Sobre o Projeto Agrinho</h2>
+        <img src="Imagens/agrinho.jpg" alt="Descrição da Imagem 1" class="imagem">
+        <p>
+          O Projeto Agrinho é uma iniciativa que visa integrar o conhecimento do campo com a realidade urbana. 
+          Com foco em educação e conscientização, buscamos promover o desenvolvimento sustentável e a valorização do agricultor.
+        </p>
+      </div>
+      <div class="text-container">
+        <img src="Imagens/3403943.jpg" alt="Descrição da Imagem 2" class="imagem">
+        <p>
+          Através de diversas atividades, workshops e eventos, queremos conectar as comunidades rurais e urbanas, 
+          facilitar diálogos e trocar experiências. Acreditamos que juntos podemos colher oportunidades e 
+          construir um futuro melhor!
+        </p>
+      </div>
+</section>
+    <div class="text-container">
+      <h3>Do Campo à Cidade: Colhendo Oportunidades</h3>
+      <p>
+        A importância do Projeto Agrinho se reflete na sua capacidade de servir como ponte entre o campo e a cidade. 
+        Este intercâmbio de saberes e vivências é essencial para o fortalecimento da identidade rural, enriquecendo a cultura urbana. 
+        Ao trazer os conhecimentos do agricultor para o ambiente urbano, promovemos uma maior valorização dos produtos locais e 
+        incentivamos o consumo consciente.
+      </p>
+      <img src="Imagens/tractor-agricultural-machine-cultivating-field.jpg" alt="Descrição da Imagem 3" class="imagem">
+      <p>
+        Além disso, ao destacar as histórias e as práticas agrícolas, o Agrinho propõe uma reflexão sobre a origem dos alimentos que consumimos, 
+        e a importância de apoiar a agricultura familiar e sustentável. As oportunidades surgem quando comunidades se unem, 
+        criando redes de suporte que fortalecem tanto os produtores rurais quanto os consumidores nas cidades.
+      </p>
+      <p>
+        Envolver-se no Projeto Agrinho significa ser parte dessa transformação. Cada atividade, cada workshop e evento se torna uma 
+        semente para o desenvolvimento e para a construção de um futuro onde o urbano e o rural coexistam em harmonia, 
+        colhendo frutos de um trabalho conjunto que promove a inclusão, a dignidade e o respeito por todos os envolvidos. 
+        Venha fazer parte desse movimento e ajude a transformar a maneira como vemos e vivemos a integração entre o campo e a cidade!
+      </p>
+    </div>
 
 
+
+
+
+    <section class="contact">
+      <h2>Contato</h2>
+      <p>Se você tem alguma dúvida ou sugestão, entre em contato conosco:</p>
+      <form action="#" method="post">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <div>
+        <p>&copy; 2024 Agrinho Paraná. Todos os direitos reservados.</p>
+        <p><a href="">Política de Privacidade</a> | <a href="">Termos de Uso</a></p>
+      </div>
+      <div>
+        <p>Siga-nos nas redes sociais:</p>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

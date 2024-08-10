@@ -3,44 +3,26 @@ body {
     padding: 0;
     font-family: "Rajdhani", sans-serif;
     font-size: 20px;
-    background-color: rgb(0, 0, 0);
+   background-color: #000000;
 }
 header {
-    display: flex;
+    margin: auto;
     background-color: black;
-}
-#area-logo{
+    opacity: 1;
+    text-align: center;
+    align-items: center;
 
-    padding: 10px;
-    float: left;
 }
 
 .logo {
     color: aqua;
     font-family: "Playwrite AR", cursive;
     font-size: 30px;
-    margin-left: 200px;
+    margin-top: 50px;
+
 }
 .logo-dois {
     color: white;
-}
-li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-.nav {
-    float: right;
-    margin: auto;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-nav li {
-    display: inline;
-    padding-right: 100px;
 }
 
 .rect{
@@ -48,71 +30,158 @@ nav li {
     background-color: aqua;
     height: 5px;
     border-radius: 10px;
+    width: 270px;
+    margin: 20px auto ;
 }
-#area-logo .rect{
-    margin-left: 205px;
-}
+
 nav a:hover {
     color: aqua;
 }
 
-.main-heading {
-    opacity: 1;
-    position: absolute;
-    width: 50%;
-    font-size: 3rem;
-    z-index: 100;
-    top: 2em;
-    left: 2em;
-    color: #FFFFFF;
-    margin-top: 250px;
-  }
-  /* BG SLIDESHOW CSS */
-  .slideshow,
-  .slideshow::after {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 0px;
-  }
-  .slideshow::after {
-    content: '';
-    background: linear-gradient(-70deg, rgba(0,0,0,0), rgba(0,0,0,1));
-  }
-  .img-bg-slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    color: transparent; /*hides span's text*/
-    background-size: cover; /* covers whole viewport */
-    background-position: 100% 100%;
-    background-repeat: none;
-    opacity: 0;
-    z-index: 0;
-    animation: backgroundSlideshow 20s linear infinite 3s;
-  }
-  .slideshow li:nth-child(1) .img-bg-slide {
-     background-image: url('Imagens/complex-aerial-view-city.jpg');
-     animation-delay: 0s;
-  }
-  .slideshow li:nth-child(2) .img-bg-slide { 
-      background-image: url('Imagens/distant-shot-port-with-boats-loaded-with-cargo-shipment-nighttime.jpg');
-      animation-delay: 6s; 
-  }
-  .slideshow li:nth-child(3) .img-bg-slide { 
-      background-image: url('Imagens/view-tank-container-water-storage.jpg');
-      animation-delay: 12s; 
-  }
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 100vh; /* altura total da tela */
+    overflow: hidden;
+}
 
-  @keyframes backgroundSlideshow {
-    0% { opacity: 0;}
-    12.5% { opacity: 1;}
-    25% { opacity: 1;}
-    37.5% { opacity: 0;}
-    100% { opacity: 0;} 
-  }
-  /* End of BG SLIDESHOW */
+.slide {
+    display: none; /* Oculta os slides inicialmente */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+ /*   opacity: 0.5;*/
+    border: 2px solid aqua;
+    border-radius: 20px;
+}
+
+.slide:nth-child(1) {
+    background-image: url('Imagens/complex-aerial-view-city.jpg'); /* Substitua com o caminho da sua imagem */
+}
+
+.slide:nth-child(2) {
+    background-image: url('Imagens/view-tank-container-water-storage.jpg'); /* Substitua com o caminho da sua imagem */
+}
+
+.slide:nth-child(3) {
+    background-image: url('Imagens/distant-shot-port-with-boats-loaded-with-cargo-shipment-nighttime.jpg'); /* Substitua com o caminho da sua imagem */
+}
+
+.fade {
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 0.5; }
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    opacity: 1;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+h2 {
+    color: #ffffff; /* Branco */
+}
+
+p,
+li {
+    color: #ffffff; /* Branco */
+}
+
+a {
+    color: #00ffcc; /* Uma cor diferente para links, se desejado */
+    text-decoration: none; /* Remover sublinhado dos links */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+form {
+    background-color: #444; /* Fundo do formulário */
+    padding: 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+input, textarea {
+    background-color: #555; /* Fundo dos inputs */
+    color: white; /* Cor do texto nos inputs */
+    border: none; /* Sem borda */
+    padding: 10px; /* Espaçamento interno */
+    width: 100%; /* Largura total do container */
+    margin-bottom: 10px; /* Espaçamento entre os campos */
+}
+
+button {
+    background-color: #007BFF; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container {
+    overflow: hidden; /* Para garantir que o container envolva a imagem flutuante */
+    margin-bottom: 20px; /* Espaço entre os parágrafos */
+}
+
+.imagem {
+    float: left; /* Faz a imagem flutuar à esquerda */
+    margin-right: 15px; /* Espaço à direita da imagem */
+    width: 500px; /* Defina uma largura adequada para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+}
+.text-container {
+    max-width: 800px; /* Limita a largura máxima do container */
+    margin: 20px auto; /* Centraliza o container horizontalmente */
+    padding: 20px; /* Espaciamento interno */
+   /* background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo do container */
+   border: 2px solid aqua;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h3 {
+    color: aqua; /* Cor verde para o título */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+p {
+    color: #f7f7f7; /* Cor do texto */
+    margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos */
+}
+
+.imagem {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Cantos arredondados na imagem */
+    margin: 20px 0; /* Espaçamento acima e abaixo da imagem */
+}
+
+@media (max-width: 600px) {
+    .text-container {
+        padding: 15px; /* Menos espaçamento interno em telas pequenas */
+    }
+}
+.titulo {
+    color:aqua;
+}
