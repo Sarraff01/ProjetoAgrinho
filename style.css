@@ -3,11 +3,13 @@ body {
     padding: 0;
     font-family: "Rajdhani", sans-serif;
     font-size: 20px;
-   background-color: #000000;
+   background: url(https://i.im.ge/2024/08/10/fSTKIh.harvesting-wheat-tranquil-meadow-sunset-generated-by-ai.jpeg);
+   background-size: 100%;
+   background-repeat: no-repeat;
 }
 header {
     margin: auto;
-    background-color: black;
+
     opacity: 1;
     text-align: center;
     align-items: center;
@@ -58,15 +60,15 @@ nav a:hover {
 }
 
 .slide:nth-child(1) {
-    background-image: url('Imagens/complex-aerial-view-city.jpg'); /* Substitua com o caminho da sua imagem */
+    background-image: url('https://i.im.ge/2024/08/10/fSTZM8.complex-aerial-view-city.jpeg'); /* Substitua com o caminho da sua imagem */
 }
 
 .slide:nth-child(2) {
-    background-image: url('Imagens/view-tank-container-water-storage.jpg'); /* Substitua com o caminho da sua imagem */
+    background-image: url('https://i.im.ge/2024/08/10/fSTzdD.view-tank-container-water-storage.jpeg'); /* Substitua com o caminho da sua imagem */
 }
 
 .slide:nth-child(3) {
-    background-image: url('Imagens/distant-shot-port-with-boats-loaded-with-cargo-shipment-nighttime.jpg'); /* Substitua com o caminho da sua imagem */
+    background-image: url('https://i.im.ge/2024/08/10/fSTVxM.distant-shot-port-with-boats-loaded-with-cargo-shipment-nighttime.jpeg'); /* Substitua com o caminho da sua imagem */
 }
 
 .fade {
@@ -83,7 +85,7 @@ nav a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 3em;
     opacity: 1;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
@@ -91,12 +93,12 @@ nav a:hover {
 }
 
 h2 {
-    color: #ffffff; /* Branco */
+    color: #000000; /* Branco */
 }
 
 p,
 li {
-    color: #ffffff; /* Branco */
+    color: #000000; /* Branco */
 }
 
 a {
@@ -116,7 +118,7 @@ form {
 
 input, textarea {
     background-color: #555; /* Fundo dos inputs */
-    color: white; /* Cor do texto nos inputs */
+    color: rgb(0, 0, 0); /* Cor do texto nos inputs */
     border: none; /* Sem borda */
     padding: 10px; /* Espaçamento interno */
     width: 100%; /* Largura total do container */
@@ -125,7 +127,7 @@ input, textarea {
 
 button {
     background-color: #007BFF; /* Cor do botão */
-    color: white; /* Cor do texto do botão */
+    color: rgb(0, 0, 0); /* Cor do texto do botão */
     border: none; /* Sem borda */
     padding: 10px 15px; /* Espaçamento interno do botão */
     cursor: pointer; /* Cursor de mão ao passar o mouse */
@@ -166,7 +168,7 @@ h3 {
 }
 
 p {
-    color: #f7f7f7; /* Cor do texto */
+    color: #000000; /* Cor do texto */
     margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos */
 }
 
